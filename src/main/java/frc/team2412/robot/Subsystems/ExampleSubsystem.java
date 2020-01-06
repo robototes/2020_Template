@@ -21,7 +21,7 @@ public class ExampleSubsystem extends SubsystemBase {
 		// appropriate to update sensor values in this function, but unlikely you will
 		// control motors from here
 
-		System.out.println("Example subsystem");
+		System.out.printf("Example subsystem, EXAMPLE_DISTANCE: %o\n", ExampleConstants.EXAMPLE_DISTANCE);
 	}
 
 	// Example method to be called by a command

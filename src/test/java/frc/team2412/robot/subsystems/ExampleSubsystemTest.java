@@ -66,6 +66,9 @@ public class ExampleSubsystemTest {
 		// Reset the subsystem to make sure all mock values are reset
 		reset(mockedExampleSubsystem);
 
+		// Make sure that the scheduler has the subsystem registered
+		CommandScheduler.getInstance().registerSubsystem(mockedExampleSubsystem);
+
 		// run the scheduler once
 		CommandScheduler.getInstance().run();
 
