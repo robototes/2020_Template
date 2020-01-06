@@ -13,6 +13,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.11
+    - name: Checkout submodules
+      uses: textbook/git-checkout-submodule-action@2.0.0
  
     - name: Make gradle useable
       run: chmod +x ./gradlew
