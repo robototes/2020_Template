@@ -53,6 +53,8 @@ dependencies {
     nativeZip wpi.deps.vendor.jni(wpi.platforms.roborio)
     nativeDesktopZip wpi.deps.vendor.jni(wpi.platforms.desktop)
 
+	//compile project(":robot_library") not building until project is updated
+
     testCompile 'junit:junit:4.12'
     testCompile 'org.mockito:mockito-core:3.2.0'
 	testCompile 'net.bytebuddy:byte-buddy-agent:1.10.3'
