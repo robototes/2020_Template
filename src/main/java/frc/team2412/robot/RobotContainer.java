@@ -13,8 +13,5 @@ public class RobotContainer {
 	public RobotContainer() {
 		// create and instance of example subsystem with the id from robot map
 		m_ExampleSubsystem = new ExampleSubsystem(RobotMap.exampleID);
-
-		// create an OI object
-		m_OI = new OI();
 	}
 }

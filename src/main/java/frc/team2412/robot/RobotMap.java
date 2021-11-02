@@ -8,5 +8,8 @@ public class RobotMap {
 	public static int exampleID = 1;
 
 	// Robot container
-	public static RobotContainer robotContainer = new RobotContainer();
+	public static RobotContainer mRobotContainer = new RobotContainer();
+
+	// OI
+	public static OI mOI = new OI(mRobotContainer);
 }

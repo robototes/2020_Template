@@ -15,9 +15,9 @@ public class OI {
 	public Button exampleSubsystemMethod = new JoystickButton(driverStick, 1);
 
 	// Constructor to set all of the commands and buttons
-	public OI() {
+	public OI(RobotContainer robotContainer) {
 		// telling the button that when its pressed to execute example command with the
 		// robot container's instance of example subsystem
-		exampleSubsystemMethod.whenPressed(new ExampleCommand(RobotMap.robotContainer.m_ExampleSubsystem));
+		exampleSubsystemMethod.whenPressed(new ExampleCommand(robotContainer.m_ExampleSubsystem));
 	}
 }
